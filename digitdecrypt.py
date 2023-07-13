@@ -2,6 +2,8 @@ class Solution:
     def digitdecrypt(self, num):
             #type num: int
             #return type: int
+            if num == 0:
+                return 0
             identification = (num%10) + (num - num%10)/10
             if identification%9 == 0:
                  return 9
